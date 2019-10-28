@@ -10,10 +10,66 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
   crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>Filai</title>
+  <title>Movies</title>
 </head>
 
 <body>
+  <!-- navigation bar -->
+  <?php include 'view/nav.php'; ?>
+
+  <div class="header">
+    <h1>
+      Todays Movies
+    </h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Time</th>
+              <th scope="col">Time Left</th>
+              <th scope="col">Movie Name</th>
+              <th scope="col">Age from</th>
+              <th scope="col">Stage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Mark</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>Mark</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>@mdo</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div><!-- end of col -->
+    </div><!-- end of row -->
+  </div><!-- end of container -->
+
+
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

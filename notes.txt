@@ -12,7 +12,7 @@ addMovie.php
 * filmo laikas kada bus rodomas
 * amziaus cenzas
 * sale
-* laikas kada bus rodomas
+
 
 originali uzduotis:
 FILMAI 
