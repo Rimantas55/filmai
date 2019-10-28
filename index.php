@@ -46,17 +46,17 @@
               $stmt = $pdo->query('SELECT * FROM movie_table');
               while($row = $stmt->fetch(PDO::FETCH_ASSOC)){  ?>
 
+              
               <tr>
-                <th scope="row"><?php echo $row['id'] ?></th>
+                <th scope="row"><?php echo getRows($nRows) ?></th><!-- Row of movie -->
                 <td><?php echo $row['date'] ?></td>
-                <td></td>
+                <td><!-- Date of the movie - date know --></td>
                 <td><?php echo $row['movie_name'] ?></td>
                 <td><?php echo $row['age'] ?></td>
                 <td><?php echo $row['stage'] ?></td>
-
               </tr>
 
-              <?php }; ?>
+              <?php }; ?><!-- end of $stmt = $pdo->query('SELECT * FROM movie_table'); -->
 
             </tbody>
           </table>

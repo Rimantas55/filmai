@@ -20,8 +20,17 @@
  # PRDO QUERY
    $stmt = $pdo->query('SELECT * FROM movie_table');
   while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-    echo $row['movie_name'] . '<br>';
+    //echo $row['movie_name'] . '<br>';
   }
    while($row = $stmt->fetch()){
-     return $row->movie_name . '<br>';
+     //return $row->movie_name . '<br>';
+  }
+
+  # GET ROW COUNT
+  $nRows = $pdo->query('select count(*) from movie_table')->fetchColumn(); 
+
+  function getRows($nRows){
+  	for ($x = 1; $x <= $nRows; $x++) { 
+  		return $x;
+  	}
   }
