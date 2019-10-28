@@ -28,9 +28,9 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <table class="table">
-            <thead class="thead-dark">
-              <tr>
+          <table class="table table-hover">
+            <thead class="thead-dark ">
+              <tr >
                 <th scope="col">#</th>
                 <th scope="col">Time</th>
                 <th scope="col">Time Left</th>
@@ -47,7 +47,7 @@
               while($row = $stmt->fetch(PDO::FETCH_ASSOC)){  ?>
 
               <tr>
-                <th scope="row">1</th>
+                <th scope="row"><?php echo $row['id'] ?></th>
                 <td><?php echo $row['date'] ?></td>
                 <td></td>
                 <td><?php echo $row['movie_name'] ?></td>
@@ -57,7 +57,7 @@
               </tr>
 
               <?php }; ?>
-              
+
             </tbody>
           </table>
 
