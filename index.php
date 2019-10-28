@@ -48,7 +48,7 @@
 
               
               <tr>
-                <th scope="row"><?php echo getRows($nRows) ?></th><!-- Row of movie -->
+                <th scope="row"><?php echo getRows($nRows) ?></th><!-- Row of movie NOT WORKING-->
                 <td><?php echo $row['date'] ?></td>
                 <td><!-- Date of the movie - date know --></td>
                 <td><?php echo $row['movie_name'] ?></td>

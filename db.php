@@ -26,7 +26,7 @@
      //return $row->movie_name . '<br>';
   }
 
-  # GET ROW COUNT
+  # GET ROW COUNT - NOT WORKING
   $nRows = $pdo->query('select count(*) from movie_table')->fetchColumn(); 
 
   function getRows($nRows){
