@@ -34,3 +34,16 @@
   		return $x;
   	}
   }
+
+  # INSERT (checking if working)
+  $movie_name = 'Element Five';
+  $age = 'N-23';
+  $stage = 8;
+  $time = '2019-12-12';
+  $sql = 'INSERT INTO movie_table(movie_name, age, stage, date) VALUES(:movie_name, :age, :stage, :date)';
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute(['movie_name' => $movie_name, 'age' => $age, 'stage' => $stage, 'date' => $time]);
+  echo 'Post Added';
+
+//   $sql = "INSERT INTO movie_table (movie_name, age, stage, date) VALUES (?,?,?)";
+// $pdo->prepare($sql)->execute([$movie_name, $age, $stage, $time]);
