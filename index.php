@@ -50,7 +50,7 @@
               <tr>
                 <th scope="row"><?php echo getRows($nRows) ?></th><!-- Row of movie NOT WORKING-->
                 <td><?php echo $row['date'] ?></td>
-                <td><!-- Date of the movie - date know --></td>
+                <td><?php //echo $row['date'] - date() ?></td><!-- neveikia eilute dar -->
                 <td><?php echo $row['movie_name'] ?></td>
                 <td><?php echo $row['age'] ?></td>
                 <td><?php echo $row['stage'] ?></td>

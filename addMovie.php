@@ -1,3 +1,5 @@
+<!-- DB -->
+<?php include 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +18,7 @@
 <body>
   <?php include 'view/nav2.php'; ?>
 
+
   <div class="header">
     <h1>
       Add Movie
@@ -26,7 +29,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <form action="addMovie.php" method="post">
+        <form action="index.php" method="post">
           <div class="form-group row">
             <label for="movie-name" class="col-sm-2 col-form-label">Movie Name</label>
             <div class="col-sm-10">
@@ -44,25 +47,25 @@
               <legend class="col-form-label col-sm-2 pt-0">Age From</legend>
               <div class="col-sm-10">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="age" id="kids" value="option1" >
+                  <input class="form-check-input" type="radio" name="age" id="kids" value="N-7" >
                   <label class="form-check-label" for="kids">
                     N-7
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="age" id="juniors" value="option2">
+                  <input class="form-check-input" type="radio" name="age" id="juniors" value="N-13">
                   <label class="form-check-label" for="juniors">
                     N-13
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="age" id="tenns" value="option2">
+                  <input class="form-check-input" type="radio" name="age" id="tenns" value="N-16">
                   <label class="form-check-label" for="tenns">
                     N-16
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="age" id="adults" value="option2" checked>
+                  <input class="form-check-input" type="radio" name="age" id="adults" value="N-18" checked>
                   <label class="form-check-label" for="adults">
                     N-18
                   </label>
@@ -75,7 +78,7 @@
             <input type="date" name="date">
           </div>
           <div class="col-sm-10 mt-3">
-            <button type="submit" class="btn btn-primary">Add</button>
+            <button type="submit" class="btn btn-primary" name="btn">Add</button>
           </div>
         </div>
       </div><!-- end of col -->
