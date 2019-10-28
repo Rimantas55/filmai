@@ -16,13 +16,13 @@
 <body>
   <?php include 'view/nav2.php'; ?>
 
-
   <div class="header">
     <h1>
       Add Movie
     </h1>
   </div>
 
+<!-- MAIN TABEL -->
   <div class="container">
     <div class="row">
       <div class="col">
