@@ -1,0 +1,25 @@
+siuo metu rodomi filmai
+bus greitai rodomi
+laikas
+amziaus cenzas n-7 n-13 n-16 n-18  / filmo pavadinimas / sale
+rodoma laika atspausdinti iki filmo pradzios
+svieslente atsinaujinti turi pati, be zmogaus isikisimo
+
+Table1
+atskiras lapas, prideti filmo seansa, pati filma naujame lape - cia turi buti forma: 
+addMovie.php
+* filmo pav
+* filmo laikas kada bus rodomas
+* amziaus cenzas
+* sale
+* laikas kada bus rodomas
+
+originali uzduotis:
+FILMAI 
+Sukurti sistemą, kino teatrui, kuri švieslentėje rodytu filmo siancus. Šiuo metu rodomus, ir tuos kurie greitai, bus rodomi. 
+Turi būti rodomas laikas, amžiaus cenzas. Filmo pavadinimas, Salė. 
+Jei filmas bus tik dar rodomas, rodyti, kiek laiko liko iki pradžios 
+Švieslentė turi atsinaujinti pati, be žmogaus įsįkišimo. (AJAX tikrai nebūtina) 
+Atskiras lapas pridėti filmo sencą. Patį filmą. 
+Bonus: be framworko. Detalus commitai.  
+Koda pateikti tvarkingoj GIT repozitorijoje. 
