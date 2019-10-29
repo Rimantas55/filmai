@@ -23,6 +23,8 @@
       <h1>
         Todays Movies
       </h1>
+      <p id="time"></p>
+      <p class="live-time"><span id="span"></span></p>
     </div>
 
     <div class="container">
@@ -74,6 +76,25 @@
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+
+<script type="">
+
+// LIVE TIME
+var span = document.getElementById('span');
+
+function time() {
+  var d = new Date();
+  var s = d.getSeconds();
+  var m = d.getMinutes();
+  var h = d.getHours();
+  span.textContent = h + ":" + m + ":" + s;
+}
+
+setInterval(time, 1000);
+
+
+
+</script>
 
 
   </body>

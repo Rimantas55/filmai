@@ -8,3 +8,10 @@ h1 {
 	max-width: 800px;
 	margin:auto;
 }
+
+.live-time{
+	max-width: 800px;
+	margin:auto;
+	text-align: center;
+	padding: 15px;
+}
