@@ -36,15 +36,15 @@
   }
 
   # INSERT (checking if working)
-if (isset($_POST['btn'])) {
-	
-  $movie_name = $_POST['movie'];
-  $age = $_POST['age'];
-  $stage = $_POST['stage'];
-  $time = $_POST['date'];
-  $sql = 'INSERT INTO movie_table(movie_name, age, stage, date) VALUES(:movie_name, :age, :stage, :date)';
-  $stmt = $pdo->prepare($sql);
-  $stmt->execute(['movie_name' => $movie_name, 'age' => $age, 'stage' => $stage, 'date' => $time]);
-  echo 'Post Added';
+  if (isset($_POST['btn'])) {
+  	$movie_name = $_POST['movie'];
+  	$age = $_POST['age'];
+  	$stage = $_POST['stage'];
+  	$time = $_POST['date'];
+  	$sql = 'INSERT INTO movie_table(movie_name, age, stage, date) VALUES(:movie_name, :age, :stage, :date)';
+  	$stmt = $pdo->prepare($sql);
+  	$stmt->execute(['movie_name' => $movie_name, 'age' => $age, 'stage' => $stage, 'date' => $time]);
 
-}
+  	header('Location: addMovie.php');
+  	echo 'Post Added';
+  }
