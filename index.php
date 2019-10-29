@@ -69,6 +69,55 @@
 
 
 
+<select >
+  <option disabled>Choose time</option>
+  
+  <?php 
+  for ($x = 0; $x <= 55; $x+=5) { ?>
+  
+  <option><?php echo  $x ;?></option>
+
+  <?php }; ?>
+</select>
+
+<select>
+
+<?php 
+for($hours=0; $hours<24; $hours++) // the interval for hours is '1'
+    for($mins=0; $mins<60; $mins+=30) // the interval for mins is '30'
+        echo '<option>'.str_pad($hours,2,'0',STR_PAD_LEFT).':'
+                       .str_pad($mins,2,'0',STR_PAD_LEFT).'</option>';
+?>
+</select>
+
+
+<?php 
+
+/**
+ *
+ * Get times as option-list.
+ *
+ * @return string List of times
+ */
+function get_times( $default = '19:00', $interval = '+30 minutes' ) {
+
+    $output = '';
+
+    $current = strtotime( '00:00' );
+    $end = strtotime( '23:59' );
+
+    while( $current <= $end ) {
+        $time = date( 'H:i', $current );
+        $sel = ( $time == $default ) ? ' selected' : '';
+
+        $output .= "<option value=\"{$time}\"{$sel}>" . date( 'h.i A', $current ) .'</option>';
+        $current = strtotime( $interval, $current );
+    }
+
+    return $output;
+}
+?>
+<select name="time"><?php echo get_times(); ?></select>
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
