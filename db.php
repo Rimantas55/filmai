@@ -36,7 +36,7 @@
   }
 
   # INSERT (checking if working)
-  if (isset($_POST['btn'])) {
+  if (isset($_POST['btn']) && !empty($_POST['movie']) && !empty($_POST['age']) && !empty($_POST['stage']) && !empty($_POST['date']) ) {
   	$movie_name = $_POST['movie'];
   	$age = $_POST['age'];
   	$stage = $_POST['stage'];
@@ -46,5 +46,7 @@
   	$stmt->execute(['movie_name' => $movie_name, 'age' => $age, 'stage' => $stage, 'date' => $time]);
 
   	header('Location: addMovie.php');
-  	echo 'Post Added';
+  	return 'Post Added';
+  } else {
+  	return false;
   }
